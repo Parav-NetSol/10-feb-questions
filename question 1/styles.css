@@ -1,0 +1,23 @@
+
+body
+{
+    background-color: #364d6b;
+}
+div 
+{
+    height: 500px;
+    background-image: url("image\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% 80%;
+    text-align: center;
+    animation-name: change_bg;
+    animation-duration: 4s;
+}
+
+
+@keyframes change_bg{
+    from {background-image: url("image\ \(1\).png");}
+    to {background-image: url("image\ \(2\).png");}
+    
+}

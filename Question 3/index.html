@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment no 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+ 
+    </script>
+</head>
+<body>
+    <div class="shift_ele" id="name_list">
+        <div class="list">
+            <ul>
+                <li>br1</li>
+                <li>br2</li>
+                <li>br3</li>
+                <li>br4</li>
+                <li>br5</li>
+                <li>br6</li>
+                <li>br7</li>
+                <li>br8</li>
+                <li>br9</li>
+                <li>br10</li>
+
+            </ul>
+        </div>
+        <div class="btn">
+            <div class="append">
+                <button id="app2">append To another div</button>
+            </div>
+            <div class="prepend">
+                <button id="pre2">back to main div</button>
+            </div>
+        </div>
+        <div class="shift" id="sft_res">
+            <ul>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#app2").click(function(){
+            $("#name_list li:first-child").each(function()
+            {
+                $(this).remove().appendTo('#sft_res ul');
+            })
+         })
+         $("#pre2").click(function()
+         {
+         $("#sft_res li:first-child").each(function()
+            {
+                $(this).remove().appendTo('.list ul');
+            })
+        })
+});
+</script>
+</html>

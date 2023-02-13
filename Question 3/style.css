@@ -1,0 +1,38 @@
+.shift_ele {
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+}
+
+.list,
+.shift {
+    background-color: rgb(82, 82, 71);
+    border: 1px solid rgb(20, 73, 133);
+    height: 250px;
+    width: 60%;
+    margin: 15px;
+    text-align: center;
+}
+
+.append button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgb(113, 136, 49);
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    padding: 30px;
+}
+
+.prepend button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgb(24, 121, 134);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    padding: 30px;
+}
